@@ -1,5 +1,14 @@
 package Virus;
 
-public class ChineseVariant {
-
+public class ChineseVariant implements IVirus{
+	
+	public double contagionProbability(Person p) {
+		
+		
+	}
+	public boolean tryToContagion(Person, Person) {
+		
+	}
+	public boolean tryToKill(Person) {
+	}
 }
