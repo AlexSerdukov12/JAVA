@@ -5,15 +5,18 @@ import java.util.List;
 import Location.Location;
 import Location.Point;
 import Population.Person;
+import Population.Sick;
+
 import java.util.Randoml;
+import java.util.*;
 
 public class Settlement {
 	
 	
-	private  String name;
-	private  Location location;
-	private  List<Person> people;
-	private  RamzorColor ramzorColor;
+	private static  String name;
+	private static  Location location;
+	private static  List<Person> people;
+	private static  RamzorColor ramzorColor;
 
 
 
@@ -48,27 +51,30 @@ public class Settlement {
 	public void setRamzorColor(RamzorColor ramzorColor) {
 		Settlement.ramzorColor = ramzorColor;
 	}
-	
-public  RamzorColor amzorColor() {
+	////methods
+	public RamzorColor calculateRamzorGrade() {
 		
 	}
-	public  double contagiousPercent() {
-		return 
-		
-	}
-	public  Point randomLocation() {
-		return Math.random()
-		
-		
-	}
-	public  boolean addPerson(Person person) {
-		
-		
-	}
-	public  boolean transferPerson(Settlement settlement, Person person) {
-		
-		
-	}
+	public double contagiousPercent() {
 
+		int sick=0;
+		for (int i = 0;i<people.size();++i) {
+			//// i am not sure about people.get(i)
+			if(people.get(i) instanceof Sick) {
+				sick+=1;
+			}
+		}
+		return (sick/people.size())*100;
+	}
 	
+	public Point randomLocation() {
+		double x=Math.random()
+	}
+	public boolean addPerson(Person a) {
+		return people.add(a);
+	}
+	public boolean transferPerson(Person a,Settlement b) {
+		return a.setSettlement(b);
+		
+	}
 }

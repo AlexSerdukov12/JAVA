@@ -30,8 +30,9 @@ public abstract class Person {
 	public Settlement getSettlement() {
 		return settlement;
 	}
-	public void setSettlement(Settlement settlement) {
+	public boolean setSettlement(Settlement settlement) {
 		this.settlement = settlement;
+		return this.settlement==settlement;
 	}
 
 	/// methods///
