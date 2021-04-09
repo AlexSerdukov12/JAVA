@@ -4,43 +4,71 @@ import java.util.List;
 
 import Location.Location;
 import Location.Point;
-
+import Population.Person;
+import java.util.Randoml;
 
 public class Settlement {
 	
 	
-	private static String name;
-	private static Location location;
-	private static List<Person> people;
-	private static RamzorColor ramzorColor;
+	private  String name;
+	private  Location location;
+	private  List<Person> people;
+	private  RamzorColor ramzorColor;
 
 
 
-	public static String getName() {
+	public String getName() {
 		return name;
 	}
 
-	public static void setName(String name) {
+	public void setName(String name) {
 		Settlement.name = name;
 	}
 	
-	public static RamzorColor amzorColor() {
+	public Location getLocation() {
+		return location;
+	}
+
+	public void setLocation(Location location) {
+		Settlement.location = location;
+	}
+
+	public List<Person> getPeople() {
+		return people;
+	}
+
+	public void setPeople(List<Person> people) {
+		Settlement.people = people;
+	}
+
+	public RamzorColor getRamzorColor() {
+		return ramzorColor;
+	}
+
+	public void setRamzorColor(RamzorColor ramzorColor) {
+		Settlement.ramzorColor = ramzorColor;
+	}
+	
+public  RamzorColor amzorColor() {
 		
 	}
-	public static double contagiousPercent() {
+	public  double contagiousPercent() {
+		return 
 		
 	}
-	public static Point randomLocation() {
-		
-		
-	}
-	public static boolean addPerson(Person) {
+	public  Point randomLocation() {
+		return Math.random()
 		
 		
 	}
-	public static boolean transferPerson(Settlement , Person) {
+	public  boolean addPerson(Person person) {
 		
 		
 	}
+	public  boolean transferPerson(Settlement settlement, Person person) {
+		
+		
+	}
+
 	
 }

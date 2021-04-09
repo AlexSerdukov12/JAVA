@@ -2,21 +2,22 @@ package Location;
 
 public class Point {
 
-	private static int x,y;
+	private static int x;
+	private static int y;
 
-	public static int getX() {
+	public int getX() {
 		return x;
 	}
 
-	public static void setX(int x) {
+	public  void setX(int x) {
 		Point.x = x;
 	}
 
-	public static int getY() {
+	public int getY() {
 		return y;
 	}
 
-	public static void setY(int y) {
+	public  void setY(int y) {
 		Point.y = y;
 	}
 	

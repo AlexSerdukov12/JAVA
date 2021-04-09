@@ -8,18 +8,18 @@ public class Sick extends Person{
 	private long contagiousTime;
 	private IVirus virus;
 	
-	public Sick(long contagiousTime,IVirus virus) {
-		super();
+	public Sick(int age,Point locantion , Settlement settlement,long contagiousTime,IVirus virus) {
+		super(age,locantion,settlement);
 		this.setContagiousTime(contagiousTime);
 		this.setVirus(virus);
 	}
 
 	@Override
 	public double contagionProbability() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 
+	/// sets and gets //
 	public IVirus getVirus() {
 		return virus;
 	}
@@ -35,6 +35,9 @@ public class Sick extends Person{
 	public void setContagiousTime(long contagiousTime) {
 		this.contagiousTime = contagiousTime;
 	}
+	
+	
+	//methods//
 	
 	public Person recover() {
 		

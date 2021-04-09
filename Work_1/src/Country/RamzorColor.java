@@ -1,7 +1,7 @@
+
 package Country;
 
-public enum RamzorColor {
+enum RamzorColor {
 	Green,Yellow,Orange,Red;
-	
 	
 }
